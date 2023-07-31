@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 19%,
+    rgba(241, 241, 247, 1) 46%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+.app-container {
+  background-color: aliceblue;
+  border-radius: 40px;
+  padding: 10px;
+  border-radius: 50px;
+}
+.container {
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88vw;
+}
+.main-header li {
+  padding: 0 15px;
+}
+.main-header button {
+  margin-left: 10px;
+}
+.main-header img {
+  height: 80px;
+}
+.register {
+  display: flex;
+  align-items: center;
+}
+.register h5 {
+  color: rgb(11, 124, 146) !important;
+}
+.register img {
+  height: 40px;
+  margin-left: 10px;
+}
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.container1 {
+  height: 37vh;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.container2 {
+  display: flex;
+  justify-content: space-between;
+}
+.container3 {
+  display: flex;
+  justify-content: center;
+}
+.container4 {
+  display: flex;
+  justify-content: center;
+}
+.container3 img {
+  width: 43vh;
+  background: rgb(255, 187, 104);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 187, 104, 1) 0%,
+    rgba(255, 187, 104, 1) 71%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 20px;
+  position: relative;
+}
+.container3 button {
+  position: absolute;
+  bottom: 7%;
+  left: 12%;
+  width: 10vw;
+  border: 3px solid white;
+}
+.container4 button {
+  position: absolute;
+  bottom: 7%;
+  left: 35%;
+  width: 10vw;
+  border: 3px solid white;
+}
+.container4 img {
+  width: 42vh;
+  background: rgb(127, 104, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(127, 104, 255, 1) 10%,
+    rgba(230, 238, 238, 1) 89%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 20px;
+  position: relative;
+}
+.left-container {
+  width: 43vw;
+}
+.right-container {
+  background: rgb(80, 253, 254);
+  background: linear-gradient(
+    180deg,
+    rgba(80, 253, 254, 1) 0%,
+    rgba(80, 253, 254, 1) 29%,
+    rgba(236, 241, 242, 1) 100%
+  );
+  width: 43vw;
+  height: 80vh;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-container img {
+  border-radius: 50px;
+  height: 45vh;
+}
+.right-container h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.sports h1 {
+  position: relative;
+}
+.sports img {
+  position: absolute;
+  height: 150px;
+  top: 1;
+  left: 68%;
+  transform: translateY(-70%);
+}
+a {
+  color: rgb(11, 124, 146) !important;
+  font-weight: 700 !important;
+}
+/* /////////////////////////////////carousel */
+.carousel {
+  border-radius: 20px;
+}
+.carousel-indicators button {
+  height: 15px !important;
+  width: 15px !important;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: #dc3545 !important;
+}
+.carousel-backgrounColor {
+  border-radius: 15px;
+  background: rgb(222, 110, 159);
+  background: linear-gradient(
+    180deg,
+    rgba(222, 110, 159, 1) 0%,
+    rgba(232, 158, 191, 1) 53%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.centerItems {
+  display: flex;
+  justify-content: center;
+}
+.carousel-item img {
+  height: 35vh;
+  width: auto;
+}
+/* //////////////////////////// */
+.schedule-items {
+  background-color: rgb(192, 231, 227);
+  height: 28vh;
+  width: 30vw;
+}
+.schedule-container {
+  height: 28vh;
+  width: 35vw;
+}
+.schedule-container {
+  text-align: center;
+}
+.teamLogo img {
+  height: 10vh;
+}
+.teams {
+  display: flex;
+  justify-content: space-evenly;
+}
+.vs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #dc3545;
+  border-radius: 50px;
+}
+/* ///////////tabs css */
+.casinoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(80, 253, 254);
+  background: linear-gradient(
+    180deg,
+    rgba(80, 253, 254, 1) 0%,
+    rgba(80, 253, 254, 1) 29%,
+    rgba(236, 241, 242, 1) 100%
+  );
+  height: 83vh;
+}
+.container {
+  display: flex;
+  background: none;
+}
+.casinoContainer img {
+  height: 38vh;
+  width: 14vw;
+  position: relative;
+}
+.casino-games-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.casino-games-container img {
+  transition: transform 0.3s ease;
+  padding: 0 20px;
+}
+.casino-games-container:hover img {
+  transform: scale(1.2);
+}
+.casino-games-container button {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 70%;
+}
+
+.casino-games-container:hover button {
+  opacity: 1;
+}
+/* //////this is slot css */
+.gridSlot img {
+height: 20vh;
+border-radius: 10px;
+
+}
+.gridSlot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  width: 40vw;
+}
+.slot-carousel-Container {
+  justify-content: center;
+  align-items: center;
+  background: rgb(80, 253, 254);
+  background: linear-gradient(
+    180deg,
+    rgba(80, 253, 254, 1) 0%,
+    rgba(80, 253, 254, 1) 29%,
+    rgba(236, 241, 242, 1) 100%
+  );
+  height: 83vh;
+}
