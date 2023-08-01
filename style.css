@@ -20,6 +20,7 @@
   border-radius: 40px;
   padding: 10px;
   border-radius: 50px;
+  color: rgb(11, 124, 146);
 }
 .container {
   background-color: aliceblue;
@@ -44,7 +45,7 @@
   display: flex;
   align-items: center;
 }
-.register h5 {
+.register h4 {
   color: rgb(11, 124, 146) !important;
 }
 .register img {
@@ -116,12 +117,12 @@
   width: 43vw;
 }
 .right-container {
-  background: rgb(80, 253, 254);
+  background: rgb(0, 212, 255);
   background: linear-gradient(
-    180deg,
-    rgba(80, 253, 254, 1) 0%,
-    rgba(80, 253, 254, 1) 29%,
-    rgba(236, 241, 242, 1) 100%
+    90deg,
+    rgba(0, 212, 255, 1) 19%,
+    rgba(241, 241, 247, 1) 46%,
+    rgba(0, 212, 255, 1) 100%
   );
   width: 43vw;
   height: 80vh;
@@ -155,6 +156,12 @@ a {
   font-weight: 700 !important;
 }
 /* /////////////////////////////////carousel */
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .carousel {
   border-radius: 20px;
 }
@@ -220,18 +227,21 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgb(80, 253, 254);
+  background: rgb(0, 212, 255);
   background: linear-gradient(
-    180deg,
-    rgba(80, 253, 254, 1) 0%,
-    rgba(80, 253, 254, 1) 29%,
-    rgba(236, 241, 242, 1) 100%
+    90deg,
+    rgba(0, 212, 255, 1) 19%,
+    rgba(241, 241, 247, 1) 46%,
+    rgba(0, 212, 255, 1) 100%
   );
   height: 83vh;
+  width: 86vw;
+  border-radius: 20px;
 }
 .container {
   display: flex;
   background: none;
+  justify-content: center;
 }
 .casinoContainer img {
   height: 38vh;
@@ -272,9 +282,8 @@ a {
 }
 /* //////this is slot css */
 .gridSlot img {
-height: 20vh;
-border-radius: 10px;
-
+  height: 20vh;
+  border-radius: 10px;
 }
 .gridSlot {
   display: grid;
@@ -282,15 +291,121 @@ border-radius: 10px;
   gap: 10px;
   width: 40vw;
 }
-.slot-carousel-Container {
+.slot-container {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(80, 253, 254);
+}
+.slot-carousel-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(0, 212, 255);
   background: linear-gradient(
-    180deg,
-    rgba(80, 253, 254, 1) 0%,
-    rgba(80, 253, 254, 1) 29%,
-    rgba(236, 241, 242, 1) 100%
+    90deg,
+    rgba(0, 212, 255, 1) 19%,
+    rgba(241, 241, 247, 1) 46%,
+    rgba(0, 212, 255, 1) 100%
   );
   height: 83vh;
+  width: 86vw;
+}
+#carousel-slot {
+  width: 40vw;
+}
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prev-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateX(25vw);
+}
+.next-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateX(-25vw);
+}
+.gridSlot img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.gridSlot img:hover {
+  transform: scale(1.2);
+}
+.slot-game-container {
+  position: relative;
+}
+.slot-game-container button {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 70%;
+}
+.slot-game-container:hover button {
+  opacity: 1;
+}
+/* contact / footer css */
+.casinoContainer .casino img {
+  height: 50px;
+  width: 50px;
+}
+.casino {
+  margin: 0 50px;
+}
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-container h6:hover {
+  color: black;
+  cursor: pointer;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: transparent;
+}
+/* sidebar css */
+.offcanvas-body {
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 19%,
+    rgba(241, 241, 247, 1) 46%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: rgb(11, 124, 146);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.signInForm {
+  background-color: white;
+  border: 2px solid rgb(11, 124, 146);
+  padding: 15px;
+  border-radius: 10px;
+}
+.signInForm h3{
+text-align: center;
+}
+.signInForm input {
+  margin: 10px 0;
+}
+.signInForm button {
+  width: 100%;
+  margin-top: 10px;
 }
