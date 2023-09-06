@@ -37,7 +37,6 @@
 .nav-underline .nav-link {
   color: rgb(11, 124, 146);
   font-weight: 600;
-
 }
 .tabs {
   display: flex;
@@ -56,7 +55,7 @@
 }
 .register h4 {
   color: rgb(11, 124, 146) !important;
-  white-space:nowrap;
+  white-space: nowrap;
 }
 .register img {
   height: 40px;
@@ -199,7 +198,7 @@ a {
     font-size: 20px;
   }
 }
-@media screen and (max-width:861px){
+@media screen and (max-width: 861px) {
   .tab {
     display: none;
   }
@@ -208,9 +207,55 @@ a {
     display: flex;
     justify-content: center;
   }
-.main-header {
-  justify-content: center;
+  .main-header {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nav.nav-underline li {
+    padding: 0;
+    margin: 10px 0;
+  }
+  .register {
+    margin: 10px 0;
+  }
+  .register button {
+    margin: 0 50px;
+  }
+  .container-footer h3 {
+    font-size: 1.5rem;
+  }
+  .container-footer h6 {
+    font-size: 15px;
+  }
+  #carousel-slot {
+    width: 80vw !important;
+  }
+.slot-container {
+  position: relative;
 }
+.prev-icon {
+  top: 92% !important;
+}
+.next-icon {
+  top: 92% !important;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -5vh !important;
+}
+.gridSlot img {
+  z-index: 9999;
+}
+.carousel-control-prev {
+  z-index: 0 !important;
+}
+.carousel-control-next {
+  z-index: 0 !important;
+}
+.main-body {
+  flex-direction: column;
+}
+
 }
 @media screen and (max-width: 770px) {
   .btn-danger-menu {
@@ -260,6 +305,21 @@ a {
     justify-content: space-around;
     margin-bottom: 20px;
   }
+  .casino-games-container img {
+    height: 20vh !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .container-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-underline {
+    gap: 0 !important;
+  }
+  .nav-link  {
+    padding: 0 !important;
+  }
+  
 }
 @media screen and (max-width: 380px) {
   .sports img {
@@ -292,10 +352,10 @@ a {
   }
   .casino {
     margin-left: 10%;
-    }
-    .casino h3 {
-      font-size: 15px;
-    }
+  }
+  .casino h3 {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 380px) {
   .casinoContainer img {
@@ -520,7 +580,6 @@ a {
     rgba(0, 212, 255, 1) 19%,
     rgba(241, 241, 247, 1) 46%,
     rgba(0, 212, 255, 1) 100%
-    
   );
   height: 87vh;
   width: 83vw;
@@ -536,7 +595,8 @@ a {
   cursor: pointer;
 }
 
-.dropdown-item.active, .dropdown-item:active  {
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: transparent !important;
 }
 .casino {
@@ -567,7 +627,6 @@ a {
   color: rgb(11, 124, 146);
   justify-content: flex-end !important;
 }
-
 
 .signInForm {
   background-color: white;
